@@ -14,11 +14,11 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(11, 11, 11);
 }
 
 .titulo {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(30, 30, 30);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -39,7 +39,9 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(to right, rgb(3, 3, 28) 55%, rgb(11, 1, 84));
+    background: rgb(2, 0, 62);
+    background: radial-gradient(circle, rgb(2, 0, 49) 0%, rgba(0, 6, 29, 1) 90%, rgba(6, 9, 34, 1) 100%);
+
     width: 450px;
     height: 220px;
     position: relative;
@@ -64,7 +66,7 @@ body {
     width: 0;
     height: 10px;
     border-radius: 5px;
-    background-color: rgb(68, 48, 215);
+    background-color: rgb(14, 0, 116);
     animation: load 2s linear forwards;
 }
 
