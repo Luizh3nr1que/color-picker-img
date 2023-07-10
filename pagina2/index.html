@@ -68,8 +68,13 @@
     </button>
 
 
-    <video src="../video/video.mp4" controls muted autoplay></video>
+    <video class="video" src="../video/video.mp4" controls muted autoplay controlsList="nodownload"></video>
 
 </body>
+
+<script>
+    var video = document.getElementById("video");
+    video.playbackRate = 10;
+</script>
 
 </html>
