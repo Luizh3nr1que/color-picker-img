@@ -53,16 +53,17 @@ body {
     right: 38px;
     top: 105px;
     z-index: 99;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 80%;
     height: 10px;
-    background-color: rgb(152, 152, 152);
+    background-color: rgb(101, 101, 101);
     display: none;
 }
 
 .load {
     width: 0;
     height: 10px;
+    border-radius: 5px;
     background-color: rgb(68, 48, 215);
     animation: load 2s linear forwards;
 }
