@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+}
+
+.titulo {
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: rgb(107, 107, 107);
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.none {
+    display: none;
+    font-size: 19px;
+}
+
+.none a {
+    text-decoration: none;
+    color: rgb(100, 100, 255);
+}
+
+.container {
+    background-image: linear-gradient(to right, rgb(3, 3, 28) 55%, rgb(11, 1, 84));
+    width: 450px;
+    height: 220px;
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
+}
+
+.loadContainer {
+    position: absolute;
+    right: 38px;
+    top: 105px;
+    z-index: 99;
+    border-radius: 3px;
+    width: 80%;
+    height: 10px;
+    background-color: rgb(152, 152, 152);
+    display: none;
+}
+
+.load {
+    width: 0;
+    height: 10px;
+    background-color: rgb(68, 48, 215);
+    animation: load 2s linear forwards;
+}
+
+@keyframes load {
+    to {
+        width: 100%;
+    }
+
+    from {
+        width: 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 310px;
+    margin: 10px auto 0 55px;
+}
+
+form label {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+form #imagem {
+    color: rgb(125, 125, 125);
+}
+
+.uploadIcon {
+    color: rgb(0, 49, 154);
+    font-size: 50px;
+    position: absolute;
+    top: 80px;
+    left: 15px;
+
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    border: 2px dotted rgb(51, 51, 51);
+    padding: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    transition: .3s;
+    background-color: rgba(24, 24, 24, 0.331);
+}
+
+
+.erro {
+    color: rgb(254, 66, 66);
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 35px;
+}
+
+
+
+.imagePreviewContainer {
+    gap: 30px;
+    padding: 20px 30px 20px 30px;
+    width: 500px;
+    height: auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
+}
+
+.imagePreviewContainer h2 {
+    font-size: 20px;
+    color: rgb(159, 159, 159);
+
+}
+
+.imagemConteudo img {
+    max-width: 280px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 4px rgb(34, 34, 34), 0 0 0 7px rgb(135, 135, 135);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.voltar {
+    background-color: transparent;
+    color: white;
+    border: 2px dotted rgb(219, 219, 219);
+    padding: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.voltar:hover {
+    transition: .3s;
+    background-color: rgba(13, 13, 13, 0.447);
+}
+
+.inputs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#value {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 381px) {
+    .container {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .imagePreviewContainer {
+        width: 100%;
+    }
+
+    .imagemConteudo img {
+        width: 100%;
+    }
+
+
+    .imagePreviewContainer h2 {
+        font-size: 17px;
+    }
+}

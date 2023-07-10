@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+
+    <link rel="shortcut icon" href="icon/favicon-32x32.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- fim css -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Veja as cores da sua imagem</title>
+</head>
+
+<body>
+    <h2 class="titulo">Faça o upload da sua imagem e pegue todas as cor nela</h2>
+    <h2 class="titulo none">Não sabe como pegar as cor veja um video <a href="./pagina2/index.html"
+            target="_blank">aqui</a></h2>
+
+    <div class="container">
+
+        <div class="loadContainer">
+            <div class="load"></div>
+        </div>
+
+        <div class="formUpload">
+            <ion-icon class="uploadIcon" name="arrow-up-circle-outline"></ion-icon>
+
+            <form>
+                <label for="imagem">Upload a File</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+                <button class="button" type="submit">Upload</button>
+            </form>
+
+            <div class="erro"></div>
+        </div>
+
+    </div>
+
+    <div class="imagePreviewContainer" style="display: none;">
+        <h2>Clique na cor e na lupa para pegar a cor de um elemento</h2>
+
+        <div class="imagemConteudo">
+            <img id="image-preview" src="bg2.jpg">
+        </div>
+
+        <div class="input">
+            <button class="voltar">Voltar</button>
+
+            <div class="inputs">
+                <span id="value"></span>
+                <input type="color" id="color-picker">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
