@@ -44,9 +44,6 @@ inputImg.addEventListener('change', function () {
 
 
 
-
-
-
 const inputColor = document.getElementById('color-picker');
 const colorValue = document.getElementById('value');
 
